@@ -1,0 +1,22 @@
+{
+  "company": {
+    "name": "GOTIHUB",
+    "tagline": "Enterprise Software Engineering & Digital Transformation",
+    "website": "https://gotihub.com",
+    "email": "contact@gotihub.com",
+    "phone": "+880XXXXXXXXXX",
+    "address": "Samad Mansion (2nd Floor), Plot-14, Road-1, Mirpur-10, Dhaka-1216"
+  },
+
+  "client": {
+    "name": "ABC Securities Ltd.",
+    "contact": "Managing Director"
+  },
+
+  "proposal": {
+    "title": "Corporate Website & Enterprise Management Platform",
+    "date": "July 2026",
+    "price": "70,000 BDT",
+    "timeline": "15 Working Days"
+  }
+}
