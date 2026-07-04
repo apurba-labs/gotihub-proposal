@@ -1,23 +1,29 @@
-@page {
-    size: A4;
-    margin: 0;
+@page{
+
+    size:A4;
+
+    margin:0;
+
 }
 
 *{
+
     margin:0;
+
     padding:0;
+
     box-sizing:border-box;
+
 }
 
 body{
-    font-family:
-        "Segoe UI",
-        Arial,
-        sans-serif;
 
-    color:#2c3e50;
+    font-family:Inter,Arial,sans-serif;
 
-    background:white;
+    color:#2C3E50;
+
+    background:#fff;
+
 }
 
 .page{
@@ -26,26 +32,272 @@ body{
 
     height:297mm;
 
-    page-break-after:always;
+    padding:22mm;
 
-    padding:25mm;
+    page-break-after:always;
 
     position:relative;
 
 }
 
-.footer{
+.cover{
 
-    position:absolute;
+    display:flex;
 
-    bottom:12mm;
+    flex-direction:column;
 
-    left:25mm;
+}
 
-    right:25mm;
+.cover-top{
+
+    margin-top:20px;
+
+}
+
+.logo{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:#1149A1;
+
+    letter-spacing:2px;
+
+}
+
+.tagline{
+
+    color:#666;
+
+    margin-top:8px;
+
+    font-size:15px;
+
+}
+
+.cover-center{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-direction:column;
+
+}
+
+.proposal-type{
+
+    color:#F7931E;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
+    margin-bottom:20px;
+
+}
+
+.proposal-title{
+
+    font-size:42px;
+
+    line-height:1.25;
+
+    font-weight:800;
+
+    color:#1149A1;
+
+}
+
+.cover-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:15px;
+
+    border-top:2px solid #1149A1;
+
+    padding-top:20px;
+
+}
+
+.label{
+
+    color:#888;
+
+    font-size:12px;
+
+    text-transform:uppercase;
+
+}
+
+.value{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    margin-top:5px;
+
+}
+
+.small{
+
+    color:#666;
+
+    margin-top:8px;
+
+    font-size:13px;
+
+}
+
+h1{
+
+    color:#1149A1;
+
+    font-size:28px;
+
+    margin-bottom:30px;
+
+}
+
+p{
+
+    margin-bottom:18px;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+.signature{
+
+    margin-top:60px;
+
+}
+
+.company-logo{
+
+    width:240px;
+
+    height:auto;
+
+}
+
+.cover{
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:297mm;
+
+}
+
+.cover-header{
+
+    margin-top:10mm;
+
+}
+
+.cover-body{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.proposal-label{
+
+    color:#F7931E;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
+    margin-bottom:20px;
+
+    font-size:18px;
+
+}
+
+.cover h1{
+
+    font-size:48px;
+
+    line-height:1.2;
+
+    color:#1149A1;
+
+    margin-bottom:25px;
+
+}
+
+.subtitle{
+
+    width:70%;
+
+    color:#555;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+.cover-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    border-top:2px solid #1149A1;
+
+    padding-top:18px;
+
+    margin-bottom:10mm;
+
+}
+
+.small-title{
+
+    color:#888;
+
+    text-transform:uppercase;
 
     font-size:11px;
 
-    color:#777;
+    letter-spacing:2px;
+
+    margin-bottom:6px;
+
+}
+
+.cover-footer h3{
+
+    color:#1149A1;
+
+    margin-bottom:5px;
+
+}
+
+.cover-footer p{
+
+    margin:0;
+
+    color:#666;
 
 }
