@@ -2,21 +2,46 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
     <title>{{ proposal.title }}</title>
 
     <style>
+{{ inline_css | safe }}
+    </style>
 
-{{ inline_css }}
-
-</style>
 </head>
 
 <body>
 
 {% include "cover.html" %}
+
 {% include "letter.html" %}
+
 {% include "company.html" %}
+
+{% include "requirement.html" %}
+
+{% include "website.html" %}
+
+{% include "employee.html" %}
+
+{% include "workflow.html" %}
+
+{% include "technology.html" %}
+
+{% include "timeline.html" %}
+
+{% include "commercial.html" %}
+
+{% include "support.html" %}
+
+{% include "thankyou.html" %}
 
 </body>
 

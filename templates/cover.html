@@ -1,72 +1,91 @@
 <section class="page cover">
 
-    <div class="cover-header">
-        
+    <header class="cover-header">
 
-    </div>
-    <div class="logo">
+        <div class="cover-brand">
 
-            {{ logo_svg|safe }}
+            <img src="{{ logo }}" class="brand-logo" alt="GOTIHUB Logo">
+
+            <div>
+
+                <h2>GOTIHUB</h2>
+
+                <p>Enterprise Software Engineering & Digital Transformation</p>
+
+            </div>
 
         </div>
 
-    <div class="cover-body">
+    </header>
+
+    <main class="cover-main">
 
         <div class="proposal-label">
             FINANCIAL & TECHNICAL PROPOSAL
         </div>
 
-        <h1>
-            Corporate Website &
-            <br>
-            Enterprise Digital Platform
-        </h1>
+        <h1>{{ proposal.title }}</h1>
 
-        <p class="subtitle">
-            Website Development, Employee Management,
-            Workflow Automation & Digital Transformation
+        <p class="proposal-subtitle">
+            {{ proposal.subtitle }}
         </p>
 
-    </div>
+        <div class="divider"></div>
 
-    <div class="cover-footer">
+        <ul class="cover-services">
 
-        <div class="left">
+            <li>Corporate Website Development</li>
 
-            <div class="small-title">
-                Prepared For
+            <li>Responsive Web Design</li>
+
+            <li>Content Management System</li>
+
+            <li>SEO & Security Optimization</li>
+
+        </ul>
+
+    </main>
+
+    <footer class="cover-footer">
+
+        <div class="prepared-for">
+
+            <div class="label">
+                PREPARED FOR
             </div>
 
-            <h3>
-                {{ client.name }}
-            </h3>
+            <div class="client-identity">
+                {% if client.logo %}
+                <img src="{{ client.logo }}" class="client-logo" alt="{{ client.name }} Logo">
+                {% endif %}
 
-            <p>
-                {{ client.contact }}
-            </p>
+                <div>
+                    <h3>{{ client.name }}</h3>
+
+                    <p>{{ client.contact }}</p>
+
+                    {% if client.website %}
+                    <small>{{ client.website }}</small>
+                    {% endif %}
+                </div>
+            </div>
 
         </div>
 
-        <div class="right">
+        <div class="prepared-by">
 
-            <div class="small-title">
-                Prepared By
+            <div class="label">
+                PREPARED BY
             </div>
 
-            <h3>
-                {{ company.name }}
-            </h3>
+            <h3>{{ company.name }}</h3>
 
-            <p>
-                {{ company.tagline }}
-            </p>
+            <p>{{ company.website }}</p>
 
-            <span>
-                {{ proposal.prepared_date }}
-            </span>
+            <small>{{ proposal.prepared_date }}</small>
 
         </div>
 
-    </div>
+    </footer>
 
 </section>

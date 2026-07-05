@@ -13,6 +13,8 @@ class Company(BaseModel):
 class Client(BaseModel):
     name: str
     contact: str
+    website: str | None = None
+    logo: str | None = None
 
 
 class Proposal(BaseModel):

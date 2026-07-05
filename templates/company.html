@@ -1,0 +1,60 @@
+<section class="page">
+
+    <div class="page-kicker">Company Profile</div>
+
+    <h1>About {{ company.name }}</h1>
+
+    <p class="lead">
+        {{ company.name }} is a software engineering and digital transformation partner focused on building dependable business platforms for growing organizations.
+    </p>
+
+    <div class="two-column">
+        <div>
+            <h2>Our Approach</h2>
+            <p>
+                We design systems that are clear to operate, secure by default and ready to evolve with future business needs. Every engagement is handled with structured discovery, transparent delivery checkpoints and practical documentation.
+            </p>
+        </div>
+
+        <div class="info-panel">
+            <h2>Company Information</h2>
+            <dl class="details-list">
+                <div>
+                    <dt>Website</dt>
+                    <dd>{{ company.website }}</dd>
+                </div>
+                <div>
+                    <dt>Email</dt>
+                    <dd>{{ company.email }}</dd>
+                </div>
+                <div>
+                    <dt>Phone</dt>
+                    <dd>{{ company.phone }}</dd>
+                </div>
+                <div>
+                    <dt>Address</dt>
+                    <dd>{{ company.address }}</dd>
+                </div>
+            </dl>
+        </div>
+    </div>
+
+    <div class="feature-grid">
+        <article>
+            <span>01</span>
+            <h3>Business First</h3>
+            <p>Requirements are translated into practical workflows that support real operational goals.</p>
+        </article>
+        <article>
+            <span>02</span>
+            <h3>Reliable Delivery</h3>
+            <p>Delivery is organized around clear milestones, feedback cycles and accountable handover.</p>
+        </article>
+        <article>
+            <span>03</span>
+            <h3>Maintainable Systems</h3>
+            <p>The platform is structured for future enhancement, security updates and team adoption.</p>
+        </article>
+    </div>
+
+</section>

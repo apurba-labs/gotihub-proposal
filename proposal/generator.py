@@ -30,6 +30,6 @@ class ProposalGenerator:
 
         renderer.save(html)
 
-        #asyncio.run(
-        #    PdfGenerator().generate()
-        #)
+        asyncio.run(
+            PdfGenerator().generate()
+        )
