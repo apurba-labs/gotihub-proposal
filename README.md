@@ -80,6 +80,8 @@ Generate proposal:
 
 ```bash
 uv run python main.py
+
+uv run python -m http.server 8000
 ```
 
 Generated files:
@@ -87,6 +89,13 @@ Generated files:
 ```
 output/proposal.html
 output/proposal.pdf
+```
+
+Browse 
+
+```
+http://localhost:8000/output/proposal.html
+
 ```
 
 ---
